@@ -35,7 +35,7 @@ assign enable_out = (delay==timer);
 
 initial begin timer=0; D=0; out=0; end
 
-trigger triiger_instant (
+trigger trigger_instant (
     .in(in), 
     .clock(clock), 
     .out(reset)

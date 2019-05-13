@@ -28,7 +28,7 @@ reg Q;
 
 initial begin Q=0; out=0; end
 
-always@(posedge clock)begin
+always@(posedge clock or negedge clock)begin
 	Q<=in;
 	out<=~(Q==in);
 end
